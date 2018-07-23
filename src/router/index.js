@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Rhymesaurus from '@/components/Rhymesaurus'
-// TODO: Import new component
+import OtherComponent from '@/components/OtherComponent'
 
 Vue.use(Router)
 
@@ -11,7 +11,11 @@ export default new Router({
       path: '/',
       name: 'Rhymesaurus',
       component: Rhymesaurus
+      },
+      {
+      path: '/OtherComponent',
+      name: 'OtherComponent',
+      component: OtherComponent
     }
-    // TODO: Add new route definition here.
   ]
 })
